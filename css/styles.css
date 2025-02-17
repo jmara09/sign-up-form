@@ -118,11 +118,30 @@ body {
       font-size: 0.7rem;
       font-weight: 500;
     }
-
-    & input {
-      border: 1px solid #e5e7ebf3;
-    }
   }
+
+  & input {
+    border: 1px solid #e5e7ebf3;
+  }
+}
+
+.sign-up input {
+  &:user-invalid {
+    border: 1px solid #ff0000;
+  }
+
+  &:hover {
+    background-color: #c7c3c3c2;
+  }
+
+  /* &:focus {
+    border: 1px solid #0e0eff;
+  } */
+}
+
+.sign-up input:focus {
+  outline: 1px solid #0000ff;
+  box-shadow: -1px 0px 30px -9px rgba(0, 0, 0, 0.76);
 }
 
 div .bottom {
